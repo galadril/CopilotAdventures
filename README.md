@@ -1,34 +1,59 @@
-## 1. Agenda
+# "The Magical Forest of Algora" Adventure
 
-Prerequisites:
+## Table of Contents
+- [Agenda](#agenda)
+- [Setup](#setup)
+- [The Magical Forest of Algora](#the-magical-forest-of-algora)
+  - [Introduction](#introduction)
+  - [Objective](#objective)
+  - [Specifications](#specifications)
+    - [Dance Moves and Effects](#dance-moves-and-effects)
+    - [Dance Dynamics](#dance-dynamics)
+    - [Dance Sequence](#dance-sequence)
+    - [Creature Moves](#creature-moves)
+    - [Advanced Features (if time permits)](#advanced-features-if-time-permits)
+    - [Constraints](#constraints)
+    - [Summary of High-Level Tasks to Perform](#summary-of-high-level-tasks-to-perform)
+    - [Tips to Get Started](#tips-to-get-started)
+  - [GitHub Copilot Tips](#github-copilot-tips)
+- [Start Coding](#start-coding)
+- [Submit Your Solution](#submit-your-solution)
+- [Intel](#intel)
 
+  
+## Agenda
+
+### Prerequisites:
 - Active Github account
 - Copilot license that has been shared with you is already linked to your account
 - Wifi is connected, internet is working
 
 If you do not have any of the above, pair up with someone that does have everything working.
 
-1. Gather, grab coffee, pair up & setup (10 mins)
-2. Quick primer on Copilot (5 mins)
-3. Explain assignment (5 mins)
-4. Code! (45 mins)
-5. Demos & group discussion (15 mins)
 
-## 1. Setup
+### Time Table:
 
-To get started, enter by clicking the button below. This will create a GitHub Codespace that you can work in. Once it loads select the **Create codespace** button.
+| Activities | Duration  | 
+| -------- | -------- | 
+| Gather, grab coffee, pair up & set up | 10 mins | 
+| Learn about Copilot | 5 mins | 
+| Explain Assignment | 5 mins  | 
+| Code! | 45 mins | 
+| Demos & group discussion | 15 mins|
 
-[![Enter Adventure Arena](https://img.shields.io/static/v1?style=for-the-badge&label=Enter+Adventure+Arena&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=774936573&skip_quickstart=true)
+### Setup
 
-!["QR"](Images/qr-codespace.png)
+To get started, enter by clicking the button below. This will create a GitHub Codespace that you can work in. Once it loads select the Create codespace button. 
 
-## 2. The Magical Forest of Algora
+[![Enter Adventure Arena](https://img.shields.io/static/v1?style=for-the-badge&label=Enter+Adventure+Arena&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&skip_quickstart=true)
+
+## The Magical Forest of Algora
 
 <a href="#">
     <img src="Images/algora-forest.jpg" style="width: 830px" />
 </a>
 
-### Background
+### Introduction
 
 Deep within the enchanted Forest of Algora, two mystical creatures, the Lox and the Drako, perform a sacred dance every millennium. This dance is not just for celebration but is a ritual to bring balance to the forest.
 
@@ -38,44 +63,48 @@ Your task is to simulate the dance between Lox and Drako. Each creature has its 
 
 ### Specifications
 
-1. **Dance Moves and Effects:**
-    - Each creature can perform one of three dance moves: `Twirl`, `Leap`, or `Spin`.
-    - The combination of moves from both creatures results in a magical effect:
-        - Twirl + Twirl = Fireflies light up the forest.
-        - Leap + Spin = Gentle rain starts falling.
-        - Spin + Leap = A rainbow appears in the sky.
-        - Other combinations create different effects that you can dream up.
-  
-2. **Dance Dynamics:**
-    - Each effect will change the state of the forest.
-    - Some effects can be beneficial, while others can be detrimental.
+#### Dance Moves and Effects:
 
-3. **Dance Sequence:**
-    - The dance consists of 5 sequences.
-    - You need to display the state of the forest after each sequence.
+- Each creature can perform one of these dance moves: `Twirl`, `Leap`, or `Spin`.
+- Combination of moves from both creatures result in magical effects:
+  - Twirl + Twirl = Fireflies light up the forest.
+  - Leap + Spin = Gentle rain starts falling.
+  - Spin + Leap = A rainbow appears in the sky.
+  - Other combinations create different effects that you can dream up.
 
-4. **Creature Moves:**
+#### Dance Dynamics:
 
-    **Moves for Lox (Creature 1)**
+- Each effect will change the state of the forest.
+- Some effects can be beneficial, while others can be detrimental.
 
-    | Sequence 1 | Sequence 2 | Sequence 3 | Sequence 4 | Sequence 5 |
-    |------------|------------|------------|------------|------------|
-    | Twirl      | Leap       | Spin       | Twirl      | Leap       |
+#### Dance Sequence:
 
-    **Moves for Drako (Creature 2)**
+- The dance consists of 5 sequences.
+- You need to display the state of the forest after each sequence.
 
-    | Sequence 1 | Sequence 2 | Sequence 3 | Sequence 4 | Sequence 5 |
-    |------------|------------|------------|------------|------------|
-    | Spin       | Twirl      | Leap       | Leap       | Spin       |
+#### Creature Moves:
+**Moves for Lox (Creature 1)**
 
-5. **Advanced Features (if time permits):**
+| Sequence 1 | Sequence 2 | Sequence 3 | Sequence 4 | Sequence 5 |
+|------------|------------|------------|------------|------------|
+| Twirl | Leap | Spin | Twirl | Leap |
+
+**Moves for Drako (Creature 2)**
+
+
+| Sequence 1 | Sequence 2 | Sequence 3 | Sequence 4 | Sequence 5 |
+|------------|------------|------------|------------|------------|
+| Spin | Twirl | Leap | Leap | Spin |
+
+
+#### Advanced Features (if time permits):
     - Implement a system that allows users to add new characters, dance moves and effects.
     - Users can select the dance move for each sequence.
     - Implement speech-to-text for selecting dance moves using Azure Speech Services.
     - Visualize the forest using Azure AI DALLE-3.
     - Animate visualizations if the above is not challenging enough.
 
-### Constraints
+#### Constraints
 
 - Use GitHub Copilot and write the simulation in any language you'd like.
 - Focus on clear and concise code that handles the dance dynamics efficiently. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
@@ -142,14 +171,14 @@ See if you can use Copilot to find out the complexity (BigO notation) of the cod
 
 Copilot Chat can help with that too! Just copy the error message and paste it into Chat. Often that's all Copilot needs to resolve your issue.
 
-## 3. Start Coding
+## Start Coding
 
 Read Your Copilot Adventure description, the high-Level tasks to perform, and the GitHub Copilot hints to help you write your code.
 
 - Use [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) and/or [GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat) to help you write the code for the adventure. You can use any language you'd like. Try learning a new language if you're up for the challenge (more on that below)!
 - Leave any comments in your code to explain your thought process and show prompts that GitHub Copilot used to help you out.
 
-## 4. Submit Your Solution
+## Submit Your Solution
 
 If you'd like to share your solution with others, perform the following steps:
 
@@ -158,7 +187,7 @@ If you'd like to share your solution with others, perform the following steps:
 - Add a link to your GitHub repo in the body section.
 - If you have any feedback, share what you found (good or bad). We'd love to hear your feedback!
 
-## 5. Intel
+## Intel
 
 - Try and only use your Codespace and Copilot
 - Questions or stuck? Ask us!
