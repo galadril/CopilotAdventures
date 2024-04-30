@@ -9,7 +9,9 @@
                 "gitHub.vscode-pull-request-github",
                 "ms-dotnettools.csdevkit",
                 "ms-python.python",
-                "ritwickdey.LiveServer"
+                "ritwickdey.LiveServer",
+                "jan25.vscode-timer",
+                "vscode-branch-timer.branch-timer"
             ]
         }
     },
